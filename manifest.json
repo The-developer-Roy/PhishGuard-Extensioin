@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "PhishGuard",
+    "version": "1.0.1",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "action":{
+        "default_popup": "popup.html"
+    },
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*",
+        "https://extractor-api-cxgh.onrender.com/*"
+    ]
+}

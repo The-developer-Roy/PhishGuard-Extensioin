@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1e1e2f;
+  color: #f1f1f1;
+  padding: 15px;
+  width: 320px;
+}
+
+button#analyzeBtn {
+  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: 0.2s ease-in-out;
+  width: 100%;
+}
+
+button#analyzeBtn:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+#result {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link-card {
+  background: #2a2a3d;
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
+}
+
+.link-text {
+  font-size: 12px;
+  word-break: break-all;
+  margin-bottom: 6px;
+}
+
+.score {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.verdict {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.verdict.safe {
+  background: #22c55e;
+  color: #fff;
+}
+
+.verdict.suspicious {
+  background: #f43f5e;
+  color: #fff;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spinner {
+  border: 3px solid #2a2a3d;
+  border-top: 3px solid #3b82f6;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
