@@ -87,7 +87,7 @@ analyzeBtn.addEventListener("click", async () => {
                 ? aiData.confidence.Legit
                 : "Error";
 
-            let verdict = legit >= 0.5 ? "✅ Safe" : "⚠️ Suspicious";
+            let verdict = legit >= 0.475 ? "✅ Safe" : "⚠️ Suspicious";
 
             renderLinkResult(link, legit, verdict);
           } catch (err) {
